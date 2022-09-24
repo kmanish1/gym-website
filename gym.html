@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admire Fitness</title>
+</head>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        background: url('bckground.jpg');
+        color: white;
+    }
+    .left{
+        position: absolute;
+        display: inline-block;
+        left: 10px;
+        top: 3px;
+        margin: 11px;
+        padding: 5px;
+        text-align: center;
+        font-size: 21px;
+    }
+    .mid{
+        display: block;
+        width: 50%;
+        margin: 11px auto;
+        padding: 5px;
+    }
+    .mid li a{
+        text-decoration: none;
+        color: white;
+        margin: 39px;
+        border: 1px solid grey;
+        padding: 7px;
+        border-radius: 7px;
+    }
+    .mid li a:hover{
+        color:hotpink
+    }
+    .mid li{
+        float: left;
+        display: inline-block;
+        font-size: 21px;
+    }
+    .mid ul{
+        display: inline-block;
+    }
+    .right{
+        position: absolute;
+        display: inline-block;
+        right: 45px;
+        top: 280px;
+        margin: 11px;
+        padding: 5px;
+    }
+    .left img{
+        width: 80px;
+    }
+    #search{
+        border: 2px solid grey;
+        margin: 11px;
+        padding: 40px;
+        border-radius: 7px;
+        }
+    .container{
+        font-size: 21px;
+        width: 26%;
+        border: 2px solid grey;
+        position: absolute;
+        top: 90px;
+        margin: 106px 80px;
+        padding: 50px;
+        display: block;
+        border-radius: 10px;
+    }
+    #email{display: block;}
+    #fit{font-size: 30px;
+    margin:auto;
+    display: block;}
+    form input{
+        background-color: black;
+        color: white;
+    }
+    form{
+        padding: 10px;
+        margin: 10px;
+        
+    }
+    input{border: 2px solid grey;
+    padding: 14px;
+    margin:8px -17px;}
+    .button{
+        margin: 10px;
+        padding: 5px;
+        border-radius: 4px;
+    }
+    .button:hover{
+        background-color:hotpink
+    }
+    .inputs{
+        width: 75%;
+        border-radius: 9px;
+    }
+    .bottom{
+        background-color: cadetblue;
+        position: absolute;
+        display: block;
+        bottom: 0px;
+    }
+    .queries{
+        border-radius: 9px;
+    }
+</style>
+<body>
+    <header style="position: sticky;">
+<!-- for logo -->
+        <div class="left">
+            <img src="weight-lifting-g14fe92a32_1280.png">
+            <div>Admire Fitness</div>
+        </div>
+<!-- /* for navbar */ -->
+        <div class="mid">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fee</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+<!-- /* for buttons */ -->
+
+        <div class="right">
+            <form id="search">
+                <input type="text" placeholder="Write your queries" class="queries" >
+                <br>
+                <input type="submit" class="button" value="submit">
+                <!-- <button class="button">Submit</button> -->
+            </form>
+        </div>
+    </header>
+    <div class="container">
+        <div id="fit">Book your appointment</div>
+        <form>
+            <input type="text" placeholder="Enter your name" class="inputs" required>
+            <input type="email" placeholder="Enter your email" id="email" class="inputs" required>
+            <!-- <input type="number" placeholder="Enter your number"> -->
+            <!-- <div style="font-size:15px">Enter the date you want to join</div> -->
+            <input type="date" class="inputs" required>
+            <br>
+            <input type="submit" class="button" value="submit">
+            <!-- <button class="button">Submit</button> -->
+        </form>
+    </div>
+    <!-- <div class="bottom"> -->
+        <!-- <button>Accept cookies</button> -->
+    </div>
+</body>
+</html>
